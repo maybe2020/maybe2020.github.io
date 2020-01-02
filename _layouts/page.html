@@ -2,13 +2,7 @@
 layout: default
 ---
 
-<article>
-  {% if page.title %}
-  <section class="title">
-    <h1>{{ page.title }} </h1>
-  </section>
-  {% endif %}
-  <section class="post">
+<div class="page">
+  <h2 class="page-title">{{ page.title }}</h2>
   {{ content }}
-  </section>
-</article>
+</div>

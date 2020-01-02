@@ -1,43 +1,24 @@
-markdown: rdiscount
-highlighter: pygments
-permalink: /:year/:month/:day/:title.html
-name: "近寐遥嚣&#39;"
-markdown: rdiscount
-rdiscount:
-    extensions:
-      - generate_toc
-      - footnotes
-      - smart 
-    toc_token: "@TOC"
+# Permalinks
+# Use of `relative_permalinks` ensures post links from the index work properly.
 
-author: "岚"
-atom-baseurl: "http://maybe2020.github.io"
-#disqus: "gopherwood"
+# Setup
+title: 近寐遥嚣
+tagline: Tagline
+description: 近寐遥嚣
+url: https://maybe2020.github.io
+baseurl: ""
+paginate: 10
 
-excerpt_separator: "<!--more-->"
+# About/contact
+author:
+  name: 岚
+  url:
+  email: maybe2020@gmail.com
 
+# Custom vars
+version: 1.0.0
 
-
-navigations:
-  - title: Archive
-    class: fa fa-list-ul
-    href: /archive.html
-  - title: Tags
-    class: fa fa-tags
-    href: /tags.html
-  - title: About
-    class: fa fa-user
-    href: /about.html
-  - title: Subscribe
-    class: fa fa-rss
-    href: /atom.xml
-
-#social
-qq: "http://wpa.qq.com/msgrd?v=3&uin=331660522&site=qq&menu=yes"
-weibo: "http://blog.zxfamily.site"
-wechat: "微信号:elephant_crossing"
-linkedin: "https://www.linkedin.com/in/%E9%9C%87%E5%AE%87-%E5%AD%A3-824622b4/"
-github: "https://github.com/Zuofan"
-
-
-siteurl: "https://maybe2020.github.io/"
+# Archive
+plugins:
+  - jekyll-archives
+# bundle exec jekyll serve
