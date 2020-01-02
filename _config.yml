@@ -1,12 +1,43 @@
 markdown: rdiscount
+highlighter: pygments
+permalink: /:year/:month/:day/:title.html
+name: "近寐遥嚣&#39;"
+markdown: rdiscount
+rdiscount:
+    extensions:
+      - generate_toc
+      - footnotes
+      - smart 
+    toc_token: "@TOC"
 
-highlighter: 'pygments'
-#paginate: 8
-permalink: /:title
+author: "岚"
+atom-baseurl: "http://maybe2020.github.io"
+#disqus: "gopherwood"
 
-name: “近寐遥喧”
-title: May's blog
-description: 春天只在五月来一遭.
-url: http://maybe2020.github.io
-feed: /atom.xml
-author_info: <a href="http://maybe2020.github.io/">Maybe2020</a>
+excerpt_separator: "<!--more-->"
+
+
+
+navigations:
+  - title: Archive
+    class: fa fa-list-ul
+    href: /archive.html
+  - title: Tags
+    class: fa fa-tags
+    href: /tags.html
+  - title: About
+    class: fa fa-user
+    href: /about.html
+  - title: Subscribe
+    class: fa fa-rss
+    href: /atom.xml
+
+#social
+qq: "http://wpa.qq.com/msgrd?v=3&uin=331660522&site=qq&menu=yes"
+weibo: "http://blog.zxfamily.site"
+wechat: "微信号:elephant_crossing"
+linkedin: "https://www.linkedin.com/in/%E9%9C%87%E5%AE%87-%E5%AD%A3-824622b4/"
+github: "https://github.com/Zuofan"
+
+
+siteurl: "https://maybe2020.github.io/"
