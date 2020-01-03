@@ -1,47 +1,8 @@
 ---
-layout: default
+layout: layout
 ---
 
-<div class="post">
-  <h2 class="post-title">{{ page.title }}</h2>
-  <p class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag | cgi_escape }}"
-      title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}
-  </p>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
 
+{% assign __ = site.data.languages[site.language] %}
+{% include post.html %}
 
-<!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zMzAzNy85NTk5">
-    <script type="text/javascript">
-       (function(d, s) {
-            var j, e = d.getElementsByTagName(s)[0];
-                     if (typeof LivereTower === 'function') { return; }
-                            j = d.createElement(s);
-                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                            j.async = true;
-                            e.parentNode.insertBefore(j, e);
-            })(document, 'script');
-    </script>
-    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
-</div>
-<!-- City版安装代码已完成 -->
-
- 
-
-<!--div class="related">
-  <h2>相关</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:5 %}
-    <li>
-      <h3>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-          <small>{{ post.date | date_to_string }}</small>
-        </a>
-      </h3>
-    </li>
-    {% endfor %}
-  </ul>
-</div-->
