@@ -1,0 +1,17 @@
+.site-subtitle { 
+    display:none;
+}
+@media screen and (min-width: 1024px) {
+    #header.header {
+    	height:90px!important;
+    }
+    
+    .site-subtitle { 
+        opacity: 0.6!important;
+        left: 140px!important;
+        display: inline!important;
+        top: -20px!important;
+        vertical-align: top!important;
+        line-height: 0px!important;
+     }
+}
